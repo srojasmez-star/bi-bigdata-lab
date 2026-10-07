@@ -15,4 +15,6 @@ Thumbs.db
 
 # Tokens / claves
 *.token
-*.secretrespaldo_lab2/
+*.secret
+
+respaldo_lab2/
