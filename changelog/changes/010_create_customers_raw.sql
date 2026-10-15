@@ -1,3 +1,6 @@
+--liquibase formatted sql
+
+--changeset sebastian:010
 CREATE TABLE IF NOT EXISTS workspace.bronze.customers_raw (
     customer_id STRING,
     customer_name STRING,
@@ -6,3 +9,5 @@ CREATE TABLE IF NOT EXISTS workspace.bronze.customers_raw (
     country STRING
 )
 USING DELTA;
+
+--rollback DROP TABLE IF EXISTS workspace.bronze.customers_raw;
